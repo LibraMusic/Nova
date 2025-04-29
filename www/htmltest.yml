@@ -1,0 +1,34 @@
+IgnoreExternalBrokenLinks: true
+IgnoreURLs:
+  - www.google-analytics.com
+  - fonts.gstatic.com
+  - support.discord.com
+  - microsoft.com
+  - linkedin.com
+  - repology.org
+  - reddit.com
+  - getrevue.co
+  - docs.github.com
+  - help.github.com
+  - github.com
+  - twitter.com
+  - x.com
+  - banzaicloud.com
+  - curio.sh
+  - medium.com
+  - gofi.sh
+  - visualstudio.com
+  - iron.security
+  - hub.docker.com
+  - wixtoolset.org
+  - docs.gitlab.com
+  - blog.kubesimplify.com
+  - blog.ediri.io/
+IgnoreDirs:
+  - overrides
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreAltMissing: true
+ExternalTimeout: 60
+HTTPHeaders:
+  "Range": "bytes=0-10"
+  "Accept": "*/*"
