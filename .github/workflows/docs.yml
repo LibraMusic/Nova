@@ -1,0 +1,28 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "www/**/*"
+      - ".github/workflows/docs.yml"
+      - flake.nix
+      - flake.lock
+  pull_request:
+    paths:
+      - "www/**/*"
+      - ".github/workflows/docs.yml"
+      - flake.nix
+      - flake.lock
+
+permissions:
+  contents: read
+
+jobs:
+  htmltest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - run: npm install -g @go-task/cli
+      - run: task docs:test

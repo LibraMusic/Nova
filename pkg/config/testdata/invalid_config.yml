@@ -1,0 +1,3 @@
+version: 2
+builds:
+  - invalid_yaml: 1
